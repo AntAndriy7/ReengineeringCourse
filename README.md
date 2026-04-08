@@ -1,3 +1,18 @@
+# Badges: Поточний статус метрик проєкту
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=bugs)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=coverage)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=AntAndriy7_ReengineeringCourse&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=AntAndriy7_ReengineeringCourse)
+
+---
+
 # Лабораторні з реінжинірингу (8×)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ppanchen_NetSdrClient&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ppanchen_NetSdrClient)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ppanchen_NetSdrClient&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ppanchen_NetSdrClient)
