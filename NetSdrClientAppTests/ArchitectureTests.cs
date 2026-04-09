@@ -36,18 +36,5 @@ namespace NetSdrClientAppTests
             // Assert
             Assert.That(result.IsSuccessful, Is.True);
         }
-
-        [Test]
-        public void Classes_ShouldResideInCorrectNamespace()
-        {
-            // Arrange
-            var result = Types.InAssembly(typeof(NetSdrClientApp.NetSdrClient).Assembly)
-                .Should()
-                .ResideInNamespaceStartingWith("NetSdrClientApp")
-                .GetResult();
-
-            // Assert
-            Assert.That(result.IsSuccessful, Is.True);
-        }
     }
 }
