@@ -173,4 +173,39 @@ public class NetSdrClientTests
         // Assert
         _tcpMock.Verify(tcp => tcp.SendMessageAsync(It.IsAny<byte[]>()), Times.AtLeastOnce);
     }
+
+    [Test]
+    public void UdpMessage_WritesToBin()
+    {
+        // Arrange
+        var testFilePath = "samples.bin";
+
+        if (File.Exists(testFilePath))
+        {
+            File.Delete(testFilePath);
+        }
+
+        var dummyPayload = new byte[] { 0x08, 0x80, 0x00, 0x00, 0x01, 0x02, 0x03, 0x04 };
+
+        // Act
+        _updMock.Raise(udp => udp.MessageReceived += null, _updMock.Object, dummyPayload);
+
+        // Assert
+        Assert.That(File.Exists(testFilePath), Is.True);
+
+        if (File.Exists(testFilePath))
+        {
+            File.Delete(testFilePath);
+        }
+    }
+
+    [Test]
+    public async Task SendTcp_NoConnection_Skips()
+    {
+        // Act
+        await _client.ChangeFrequencyAsync(7100000, 0);
+
+        // Assert
+        _tcpMock.Verify(tcp => tcp.SendMessageAsync(It.IsAny<byte[]>()), Times.Never);
+    }
 }
