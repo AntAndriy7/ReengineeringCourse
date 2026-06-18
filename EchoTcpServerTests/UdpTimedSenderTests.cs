@@ -8,7 +8,7 @@ namespace EchoTcpServerTests;
 
 public class UdpTimedSenderTests
 {
-    private int GetFreeUdpPort()
+    private static int GetFreeUdpPort()
     {
         using var udp = new UdpClient(0);
         return ((System.Net.IPEndPoint)udp.Client.LocalEndPoint!).Port;
@@ -34,9 +34,12 @@ public class UdpTimedSenderTests
         var udpReceiveResult = receiveTask.Result;
         var bytes = udpReceiveResult.Buffer;
 
-        Assert.That(bytes.Length, Is.GreaterThan(0));
-        Assert.That(bytes[0], Is.EqualTo(0x04));
-        Assert.That(bytes[1], Is.EqualTo(0x84));
+        Assert.Multiple(() =>
+        {
+            Assert.That(bytes, Has.Length.GreaterThan(0));
+            Assert.That(bytes[0], Is.EqualTo(0x04));
+            Assert.That(bytes[1], Is.EqualTo(0x84));
+        });
     }
 
     [Test]
